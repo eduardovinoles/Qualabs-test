@@ -16,14 +16,8 @@ router.get('/', async (req, res) => {
         let listOfUsers = await getFiles(directoryPath)
 
         let response = {
-            'auth_module':
-            {
-
-            },
-            'content_module':
-            {
-
-            }
+            'auth_module':{},
+            'content_module':{}
         }
 
         listOfUsers.forEach((file) => {
@@ -41,12 +35,6 @@ router.get('/', async (req, res) => {
             response.content_module[file.provider.content_module].push(file.originFile)
 
         });
-
-        
-        console.log(response.length)
-
-
-
 
         res.send(response)
     } catch (error) {

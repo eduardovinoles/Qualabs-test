@@ -15,6 +15,9 @@ app.use(express.json());
 const partA = require("./src/routes/technical-assessment/part-a");
 app.use("/part-a", partA);
 
+const partB = require("./src/routes/technical-assessment/part-b");
+app.use("/part-b", partB);
+
 console.log(process.env.PORT)
 
 app.listen(process.env.PORT || 80, () => {
