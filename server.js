@@ -9,6 +9,7 @@ app.options("*", cors());
 
 app.use(express.json());
 app.use(express.urlencoded());
+app.set('json spaces', 2);
 
 app.use(express.json());
 

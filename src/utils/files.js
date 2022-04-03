@@ -7,7 +7,7 @@ const getFiles = async (directoryPath) => {
         files = fs.readdirSync(directoryPath);
         
         let listOfUsers = []
-        
+        //ceate a list from the json files
         files.forEach((file) => {
 
             let rawdata = fs.readFileSync(path.join(directoryPath,file));

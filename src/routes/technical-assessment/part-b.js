@@ -7,7 +7,6 @@ router.get('/', async (req, res) => {
     try {
 
         let response =  await getAverageGroup()
-        console.log(response);
 
         res.json(response)
     } catch (error) {
