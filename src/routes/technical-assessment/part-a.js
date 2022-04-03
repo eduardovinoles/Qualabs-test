@@ -15,13 +15,13 @@ router.get('/', async (req, res) => {
             'auth_module': {},
             'content_module': {}
         }
-        //loop files to store diferent modules with the correspondent users
+        //loop files to store diferent modules with the corresponding users
         listOfUsers.forEach((file) => {
             //if current auth_model is not stored in "response" we create it
             if (!response.auth_module[file.provider.auth_module]) {
                 response.auth_module[file.provider.auth_module] = []
             }
-            //push current user to correspondent module 
+            //push current user to corresponding module 
             response.auth_module[file.provider.auth_module].push(file.originFile)
             //we do the same with content_module
             if (!response.content_module[file.provider.content_module]) {

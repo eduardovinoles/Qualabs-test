@@ -1,6 +1,6 @@
 const getFiles = require('./files');
 
-//from the provided module type we create a list of modules with the correspondent users
+//from the provided module type we create a list of modules with the corresponding users
 const getModules = async (moduleToGet) => {
 
     const directoryPath = __dirname + '/../../resources';
