@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const getAverageGroup = require('../../utils/partB');
+const getAverageGroup = require('../../services/partB');
 
 router.get('/', async (req, res) => {
 
